@@ -5,7 +5,7 @@ rm(list=ls()) #clean, clc, close all
 # *************
 
 # Path
-setwd('V:/MPA-PRG/exercise_09') # set working directory
+setwd('C:/Users/nikol/School/MPA-PRG/exercise_09') # set working directory¨
 
 library(Biostrings)
 
@@ -82,6 +82,11 @@ GreedySuperstring <-function(S){
 S <- DNAStringSet(c(
   "CATGC", "CTAAGT", "GCTA", "TTCA", "ATGCATC"
 ))
+
+S <- DNAStringSet(c(
+  "ATC", "TCAGAG", "ATG", "AGCCAT", "TGCAT"
+))
+
 
 # zavolání funkce
 GreedySuperstring(S)
